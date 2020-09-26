@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="jquery-3.4.1.min.js"></script>
+    
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist_2/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="bootstrap-4.3.1-dist_2/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <link rel="icon" type ="image/png" href="pictures/logoSL.png">
+    <title>HOME | My SL</title>
+</head>
+<body class = "bodyHome">
+    <div class = "home-page">
+        <div class = "container-page-home">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+                    <!-- <div class ="container"> -->
+
+                    
+                        <a class="navbar-brand" href="#">
+                          <img class = "logoHead"src="pictures/logoSL.png" alt="">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                      
+                        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                          <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                              <a class="nav-link" href="HOME.html">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="package.html">My Package</a>
+                              </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="promo.html">Promo</a>
+                            </li>
+                            <li class="nav-item ">
+                              <a class="nav-link" href="feedback.html">Feedback </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="LOGIN.html">Log Out</a>
+                            </li>
+                            
+                          </ul>
+                          <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
+                          </form>
+                        </div>
+                    <!-- </div> -->
+                </nav>
+                
+                <div class="content-isi">
+
+                
+
+                
+                  <div class="jumbotron tron container-fluid">
+                      <div class ="main-content">
+                          <!-- <div class = "row"> -->
+                            <div class = "user-detail1">
+                              <div class= "user-profile">
+                                <img src="pictures/profile.jpg" class = "profile" alt="">
+                              </div>
+                              <div class = "col-9">
+                                <!-- <div class = row> -->
+                                    <span class ="message h1">Andre Basra Utama</span>
+                                    <br>
+                                    <!-- <br> -->
+                                    <span class="phone-number" id="phone-number">
+                                        081212690305
+                                    </span>
+                                <!-- </div> -->
+                                <!-- <div class = "row">
+                                    
+                                </div> -->
+                                
+                              <!-- </div> -->
+                            </div>
+
+                          </div>
+                          <br>
+                          <div class = "row">
+                            <div class = "user-credit">
+                              <div class = "row">
+                                <div class = "col-8">
+                                  <span class = "title-credit">CREDIT LEFT</span><br>
+                                  <span class = "masa-aktif">Active Until 10/12/2020</span><br>
+                                  <!-- <div class = "row"> -->
+                                    <!-- <sup class="small font-weight-bold">Rp.</sup> -->
+                                    <span class = "rp font-weight-bold">Rp.</span>
+                                    <span class = "credit font-weight-bold">33.000</span>
+                                  <!-- </div> -->
+                                  
+                                </div>
+                                <div class = "col-12">
+                                    <button type="button" class="btn btn-primary isi-ulang">Top Up</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      
+                      <br>
+                      </div>
+                      
+                          
+                  </div>
+
+  <!-- 
+                  <div class = "content">
+                    <div class = "user-desc">
+                        <div class="row">
+                          <div class = "col-4 option font-weight-bold" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                            Mobile Data
+                          </div>
+                          <div class = "col-4 option font-weight-bold" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                            Call
+                          </div>
+                          <div class = "col-4 option font-weight-bold" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                            Message
+                          </div>
+                        </div>
+                      
+                    </div>
+                  </div> -->
+
+
+                  <div class = "content">
+                    <div class = "user-desc ">
+                        <div class="accordion" id="accordionExample">
+                            <div class="card ">
+                                <div class="card-header header-Card" id="headingOne">
+                                    <h2 class="mb-0 ">
+                                        <span class="font-weight-bold Header-card-title">
+                                            Your Remaining Quota
+                                        </span>
+                                    </h2>
+                                  </div>
+                              <div class="card-header" id="headingOne">
+                                <h2 class="mb-0 ">
+                                  <button class="btn btn-link test font-weight-bold" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Mobile Data
+                                  </button>
+                                </h2>
+                              </div>
+                          
+                              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body">
+                                  <div class = "row rowData">
+                                    <div class="col-5 data">
+                                      <span class="title-packageHome">OMG !!!</span>
+                                      <br>
+                                      <span class="kuota-packageHome font-weight-bold">
+                                        0 KB
+                                      </span><br>
+                                      <span class="masaAktif-packageHome">
+                                        Active Until 09/01/2020
+                                      </span>
+                                    </div>
+                                    <span class = "space">lll</span>
+                                    <div class = "col-5 data">
+                                      <span class="title-packageHome">
+                                        Internet
+                                      </span><br>
+                                      <span class ="kuota-packageHome font-weight-bold">
+                                        990.5 MB
+                                      </span><br>
+                                      <span class="masaAktifHome">
+                                        Active Until 09/01/2020
+                                      </span>
+                                    </div>
+                                  </div>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                  <button class="btn btn-link collapsed test font-weight-bold" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Call
+                                  </button>
+                                </h2>
+                              </div>
+                              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <div class="card-body">
+                                  <div class = "row rowData">
+                                    <div class= "col-12 data">
+                                        <span class="title-packageHome">Tsel</span>
+                                        <br>
+                                        <span class="kuota-packageHome font-weight-bold">
+                                          290 MIN
+                                        </span><br>
+                                        <span class="masaAktif-packageHome">
+                                          Active Until 09/01/2020
+                                        </span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="card-header" id="headingThree">
+                                <h2 class="mb-0">
+                                  <button class="btn btn-link collapsed test font-weight-bold" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Message
+                                  </button>
+                                </h2>
+                              </div>
+                              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <div class="card-body">
+                                  <div class = "row rowData">
+                                    <div class= "col-12 data">
+                                        <span class="title-packageHome">Tsel</span>
+                                        <br>
+                                        <span class="kuota-packageHome font-weight-bold">
+                                          100 SMS
+                                        </span><br>
+                                        <span class="masaAktif-packageHome">
+                                          Active Until 09/01/2020
+                                        </span>
+                                    </div>
+                                  </div>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <br>
+                    <div class="row-canvasPromo">
+                      <div class="canvas-container">
+                        <canvas id="myCanvas" >
+
+                        </canvas>
+                      </div>
+                      <div class="isiPromoChrist content">
+                        <span class="h1 font-weight-bold title-promo-canvas">Promo Christmas</span><br><br>
+                        <span class="h2 desc-promo-canvas">
+                          immediately get a <span class="font-weight-bold">4GB</span> of Mobile Data only for <span class="font-weight-bold">Rp.4.000,00</span> with another <span class="font-weight-bold">15 GB</span> bonus for this christmas only. This promo is available until 28 december 2019                          
+                        </span><br>
+                          <br>
+                        <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Read More</button>
+                      </div>
+                      
+                    </div>
+                    <br>
+                    <div class ="home-package-title-promo">
+                      Promo Package
+                    </div>
+                    <br>
+                    <div class = "rowPackageHome">
+                      <div class = "kolom10">
+                        <h4 class ="package-name-home">Package Simple Day</h4>
+                        <span class ="span-desc">30 GB</span c><br><br>
+                        <button id="butdesc1"type="button" class="btn btn-danger">Show Detail</button>
+                        <div id="desc-kolom1">
+                          <br>
+                          Duration : 12 days<br>
+                          Price : Rp. 10.000
+                        </div> 
+
+                      </div>
+                      <div  class = "kolom10">
+                        <h4 class ="package-name-home">Package Booster Mood</h4>
+                        <span class ="span-desc">10 GB</span><br><br>
+                        <button id="butdesc2"type="button" class="btn btn-danger">Show Detail</button>
+                        <div id="desc-kolom2">
+                          <br>
+                          Duration : 10 days<br>
+                          Price : Rp. 10.000
+                        </div> 
+
+                      </div>
+                      <div  class = "kolom10">
+                        <h4 class ="package-name-home">Package Anti Sleep</h4>
+                        <span class ="span-desc">10 GB</span><br><br>
+                        <button id="butdesc3"type="button" class="btn btn-danger">Show Detail</button>
+                        <div id="desc-kolom3">
+                          <br>
+                          Duration : 1 day<br>
+                          Price : Rp. 10.000
+                        </div> 
+                      </div> 
+                  </div>
+                  <br class ="enter-package">
+                  <div class ="rowPackageHome">
+                    <div class = "kolom10">
+                      <h4 class ="package-name-home">Package Anti Sleep 2</h4>
+                      <span class ="span-desc">5 GB</span><br><br>
+                      <button id="butdesc4"type="button" class="btn btn-danger">Show Detail</button>
+                      <div id="desc-kolom4">
+                        <br>
+                        Duration : 1 days<br>
+                        Price : Rp. 10.000
+                      </div> 
+
+
+                    </div>
+                    <div  class = "kolom10">
+                      <h4 class ="package-name-home">Package Flash</h4>
+                      <span class ="span-desc">40 GB</span><br><br>
+                      <button id="butdesc5"type="button" class="btn btn-danger">Show Detail</button>
+                      <div id="desc-kolom5">
+                        <br>
+                        Duration : 5 days<br>
+                        Price : Rp. 10.000
+                      </div> 
+
+
+                    </div>
+                    <div  class = "kolom10">
+                      <h4 class ="package-name-home">Package Super</h4>
+                      <span class ="span-desc">60 GB</span><br><br>
+                      <button id="butdesc6"type="button" class="btn btn-danger">Show Detail</button>
+                      <div id="desc-kolom6">
+                        <br>
+                        Duration : 10 days<br>
+                        Price : Rp. 10.000
+                      </div> 
+
+                    </div> 
+
+                  </div>
+                  </div>
+
+
+                  
+                  <div class="footer footer1">
+                      <div class="row">
+                        <div class="col-3">
+                          <img class ="logo-foot" src="pictures/logo_foot.png" alt=""><br><br>
+                          <span class="tulisan font-weight-light">Discover My SL App</span><br>
+                          <!-- <hr> -->
+                          <img class ="googleLog"src="pictures/googlePlay.png" alt="">
+                        </div>
+                        <div class= "col-3">
+                          <span class = "judul-footer font-weight-bold">Shop</span><br><br>
+                          <a href = "#"class = "isi-footer">
+                            SLCard
+                          </a><br>
+                          <hr>
+                          <a href = "#"class = "isi-footer">
+                            SLPati
+                          </a><br>
+                          <hr>
+                          <a href = "#"class = "isi-footer">
+                            SL Package
+                          </a><br>
+                          <hr>
+                          <a href = "#"class = "isi-footer">
+                            loop
+                          </a>
+                          <br>
+                          <hr>
+                          <a href = "#"class = "isi-footer">
+                            internet
+                          </a>
+                        </div>
+                        <div class="col-3">
+                            <span class = "judul-footer font-weight-bold">Explore</span><br><br>
+                            <a href = "#"class = "isi-footer">
+                              Video
+                            </a><br>
+                            <hr>
+                            <a href = "#"class = "isi-footer">
+                              Music
+                            </a><br>
+                            <hr>
+                            <a href = "#"class = "isi-footer">
+                              game
+                            </a><br>
+                            <hr>
+                            <a href = "#"class = "isi-footer">
+                              linkAja
+                            </a>
+                            <br>
+                            <hr>
+                            <a href = "#"class = "isi-footer">
+                              SL point
+                            </a>
+                        </div>
+                        <div class="col-3">
+                            <span class = "judul-footer font-weight-bold">Promo</span><br><br>
+                            <a href = "#" class = "isi-footer">
+                              Transfer Credit
+                            </a><br>
+                            <hr>
+                            <a href = "#"class = "isi-footer">
+                              TAU Packages
+                            </a><br>
+                            <hr>
+                            <a href = "#"class = "isi-footer">
+                              SL-Kick
+                            </a><br>
+                            <hr>
+                            <a href = "#"class = "isi-footer">
+                              SL Combo
+                            </a>
+                            <br>
+                            <hr>
+                            <a href = "#"class = "isi-footer">
+                              Hot Promo
+                            </a>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12">
+                          <hr>
+                          <span class ="footer-ket">PT SL Axiata, 2018 </span>
+                          <span class = "space">lll</span>
+                          <a class="ket-footer"href="#">Privacy Policy</a>
+                          <a class="ket-footer"href="#">Terms Of Service</a>
+                          <a class="ket-footer"href="#">Contact Us</a>
+                        </div>
+                      </div>
+                  </div>
+
+                  <div class = "footer2 footer">
+                    <div class  ="header-footer2">
+                        <img class ="logo-foot" src="pictures/logo_foot.png" alt=""><br><br>
+                        <span class="tulisan font-weight-light">Discover My SL App</span><br>
+                        <!-- <hr> -->
+                        <img class ="googleLog"src="pictures/googlePlay.png" alt="">
+                    </div>
+                    <div id="accordion">
+                        <div class="card">
+                          <div class="card-header collapseHeader-footer" id="headingOne">
+                            <h5 class="mb-0">
+                              <button class="btn btn-link collapse-link-footer" data-toggle="collapse" data-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne">
+                                Shop
+                              </button>
+                              <span class ="ket">&#8722;</span>
+                            </h5>
+                          </div>
+                      
+                          <div id="collapseOne1" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                                <a href = "#"class = "isi-footer1">
+                                    SLCard
+                                  </a><br>
+                                  <hr class = "line">
+                                  <a href = "#"class = "isi-footer1">
+                                    SLPati
+                                  </a><br>
+                                  <hr class="line">
+                                  <a href = "#"class = "isi-footer1">
+                                    SL Package
+                                  </a><br>
+                                  <hr class ="line">
+                                  <a href = "#"class = "isi-footer1">
+                                    loop
+                                  </a>
+                                  <br>
+                                  <hr class ="line">
+                                  <a href = "#"class = "isi-footer1">
+                                    internet
+                                  </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header collapseHeader-footer" id="headingTwo">
+                            <h5 class="mb-0">
+                              <button class="btn btn-link collapsed collapse-link-footer" data-toggle="collapse" data-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
+                                Explore
+                              </button>
+                              <span class ="ket">&#8722;</span>
+                            </h5>
+                          </div>
+                          <div id="collapseTwo2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+                                <a href = "#"class = "isi-footer1">
+                                    Video
+                                  </a><br>
+                                  <hr class ="line">
+                                  <a href = "#"class = "isi-footer1">
+                                    Music
+                                  </a><br>
+                                  <hr class ="line">
+                                  <a href = "#"class = "isi-footer1">
+                                    game
+                                  </a><br>
+                                  <hr class="line">
+                                  <a href = "#"class = "isi-footer1">
+                                    linkAja
+                                  </a>
+                                  <br>
+                                  <hr class ="line">
+                                  <a href = "#"class = "isi-footer1">
+                                    SL point
+                                  </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header collapseHeader-footer" id="headingThree">
+                            <h5 class="mb-0">
+                              <button class="btn btn-link collapsed collapse-link-footer" data-toggle="collapse" data-target="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3">
+                                Promo
+                              </button>
+                              <span class ="ket">&#8722;</span>
+                            </h5>
+                          </div>
+                          <div id="collapseThree3" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                            <div class="card-body">
+                                <a href = "#" class = "isi-footer1">
+                                    Transfer Credit
+                                  </a><br>
+                                  <hr class="line">
+                                  <a href = "#"class = "isi-footer1">
+                                    TAU Packages
+                                  </a><br>
+                                  <hr class="line">
+                                  <a href = "#"class = "isi-footer1">
+                                    SL-Kick
+                                  </a><br>
+                                  <hr class="line">
+                                  <a href = "#"class = "isi-footer1">
+                                    SL Combo
+                                  </a>
+                                  <br>
+                                  <hr class="line">
+                                  <a href = "#"class = "isi-footer1">
+                                    Hot Promo
+                                  </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="row">
+                          <div class="col-12 footer2-ket">
+                            <hr>
+                            <span class ="footer-ket">PT SL Axiata, 2018 </span>
+                            <span class = "space">lll</span>
+                            <a class="ket-footer" href="#">Privacy Policy</a>
+                            <a class="ket-footer"href="#">Terms Of Service</a>
+                            <a class="ket-footer"href="#">Contact Us</a>
+                          </div>
+                        </div>
+                  </div>
+              </div>
+        </div>
+    </div>
+    <!-- <script src="script.js"></script> -->
+    <script src = "home1.js"></script>
+    <script>
+      document.getElementById("phone-number").innerHTML = localStorage.getItem("textvalue");
+    </script>
+</body>
+</html>
